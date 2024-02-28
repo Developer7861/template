@@ -8,8 +8,8 @@
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.javatechie</groupId>
-	<artifactId>devops-integration</artifactId>
+	<groupId>com.Developer7861</groupId>
+	<artifactId>springbootonminikube</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springbootonminikube</name>
 	<description>Demo project for Spring Boot</description>
