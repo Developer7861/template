@@ -1,4 +1,4 @@
 FROM eclipse-temurin:17-jdk-alpine
-EXPOSE 8080
+EXPOSE 8090
 ADD target/springbootonminikube.jar springbootonminikube.jar
 ENTRYPOINT ["java","-jar","/springboot-on-minikube.jar"]
