@@ -1,0 +1,37 @@
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: springboot
+  namespace: default
+  labels:
+    app: springboot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springboot
+  template:
+    metadata:
+      labels:
+        app: springboot
+    spec:
+      containers:
+      - name: springboot
+        image: "chotu194/springboot:latest"
+        ports:
+          - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: springboot
+  namespace: default
+spec:
+  selector:
+    app: springboot
+  type: LoadBalancer
+  ports:
+  - name: http
+    targetPort: 8000
+    port: 80
