@@ -30,7 +30,7 @@ metadata:
 spec:
   selector:
     app: springboot
-  type: LoadBalancer
+  type: NodePort
   ports:
   - name: http
     targetPort: 8000
